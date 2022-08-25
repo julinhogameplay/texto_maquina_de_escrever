@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+body {
+    background: #0e1013;
+  }
+
+  h1 {
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+
+  h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
